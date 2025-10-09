@@ -1,0 +1,74 @@
+[
+    {
+        "id": "d89c17a0-5233-4c3c-82c0-6d844048f90b",
+        "name": "Ryzen 5 4500",
+        "brand": "AMD",
+        "description": "Procesador AMD Ryzen 5 4500 + Wraith Stealth Cooler AM4",
+        "category": "CPU",
+        "price": 72.30,
+        "imageUrl": "./public/img/gallery/d89c17a0-5233-4c3c-82c0-6d844048f90b.jpg"
+    },
+    {
+        "id": "ab8cd85e-d1b5-49a1-9fab-9180af32251c",
+        "name": "Athlon 3000G",
+        "brand": "AMD",
+        "description": "Procesador AMD Athlon 3000G 3.5GHz + Radeon Vega 3 AM4",
+        "category": "CPU",
+        "price": 39.00,
+        "imageUrl": "./public/img/gallery/ab8cd85e-d1b5-49a1-9fab-9180af32251c.jpg"
+    },
+    {
+        "id": "a997f782-8345-4ce0-a818-91f67cd2a6ab",
+        "name": "Ryzen 5 8500G",
+        "brand": "AMD",
+        "description": "Procesador AMD Ryzen 5 4500 + Wraith Stealth Cooler AM4",
+        "category": "CPU",
+        "price": 72.30,
+        "imageUrl": "./public/img/gallery/a997f782-8345-4ce0-a818-91f67cd2a6ab.jpg"
+    },
+    {
+        "id": "aab9933b-16bd-4f69-b7c6-b24c7a3ee312",
+        "name": "Core i3 12100F",
+        "brand": "Intel",
+        "description": "Procesador Intel Core i3 12100F 4.3GHz Turbo Socket 1700 Alder Lake",
+        "category": "CPU",
+        "price": 99.00,
+        "imageUrl": "./public/img/gallery/aab9933b-16bd-4f69-b7c6-b24c7a3ee312.jpg"
+    },
+    {
+        "id": "8c797fe5-9c4e-4eea-abb6-f8f509dfc12e",
+        "name": "Core i5 14400",
+        "brand": "Intel",
+        "description": "Procesador Intel Core i5 14400 4.7GHz Turbo Socket 1700 Raptor Lake",
+        "category": "CPU",
+        "price": 203.00,
+        "imageUrl": "./public/img/gallery/8c797fe5-9c4e-4eea-abb6-f8f509dfc12e.jpg"
+    },
+    {
+        "id": "b708e646-4dba-4901-85b3-f6adc11ccfad",
+        "name": "GeForce RTX 3050",
+        "brand": "Asus",
+        "description": "Placa de Video ASUS Dual GeForce RTX 3050 8GB GDDR6 V2 OC",
+        "category": "GPU",
+        "price": 272.00,
+        "imageUrl": "./public/img/gallery/b708e646-4dba-4901-85b3-f6adc11ccfad.jpg"
+    },
+    {
+        "id": "35b3a61d-6a20-4c31-86d9-cde7cb1e0a92",
+        "name": "GeForce RTX 3060",
+        "brand": "Zotac",
+        "description": "Placa de Video Zotac GeForce RTX 3060 12GB GDDR6 Twin Edge",
+        "category": "GPU",
+        "price": 332.00,
+        "imageUrl": "./public/img/gallery/35b3a61d-6a20-4c31-86d9-cde7cb1e0a92.jpg"
+    },
+    {
+        "id": "337e053a-3728-49ab-bba9-7974710c5508",
+        "name": "GeForce RTX 5070",
+        "brand": "Asus",
+        "description": "Placa de Video ASUS TUF GeForce RTX 5070 12GB GDDR7 Gaming OC",
+        "category": "GPU",
+        "price": 825.00,
+        "imageUrl": "./public/img/gallery/337e053a-3728-49ab-bba9-7974710c5508.jpg"
+    }
+]
