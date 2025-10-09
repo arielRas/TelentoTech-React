@@ -9,7 +9,6 @@ export const getAllProducts = async () => {
             throw new Error(`[ERROR] - Error al intentar obtener los productos - Status Code: ${response.status}`)
 
         const data = await response.json();
-
         return data;
     }
     catch(error) {
