@@ -5,6 +5,6 @@
     margin: 0 auto;
     place-items: center;
     row-gap: 10px;
-    column-gap: 5px;
-    
+    position: absolute;
+    top: 95%;    
 }

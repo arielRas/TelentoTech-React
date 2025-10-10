@@ -1,11 +1,9 @@
-import Header from './components/Header/Header';
-import {ProductList} from './containers/ProductList/Productlist';
+import Home from './pages/Home/home';
 
 function App() {
   return (
     <>  
-      <Header/>
-      <ProductList/>
+      <Home/>
     </>
   )
 }
