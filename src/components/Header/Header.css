@@ -1,31 +1,31 @@
-header{
+header {
     width: 100%;
-    display: flex;    
-    background-color: black
+    display: flex;
+    background-color: #0B1E3A;
 }
 
 
-.header-logo-container{
+.header-logo-container {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 1px black
-
 }
 
-.header-logo-container img{
-    height: 80px;
+.header-logo-container img {
+    height: 70px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-nav{
+nav {
     flex: 3;
     display: flex;
     color: white;
-    font-weight: bold;    
+    font-weight: bold;
 }
 
-nav ul{
+nav ul {
     width: 100%;
     display: flex;
     padding: 0;
@@ -36,14 +36,13 @@ nav ul{
 }
 
 
-.header-aux-container{
+.header-aux-container {
     flex: 1;
     display: flex;
-    border: solid 1px black
 }
 
 .header-login-button-container,
-.header-cart-container{
+.header-cart-container {
     flex: 1;
     display: flex;
     align-items: center;
