@@ -1,7 +1,7 @@
-import { ProductCard } from "../../components/ItemCard/ProductCard"
-import "./Productlist.css";
+import { ProductCard } from "../../components/ItemCard/ProductCard";
 import { useEffect, useState } from "react";
-import { getAllProducts } from "../../Services/ProductService"
+import { getAllProducts } from "../../Services/ProductService";
+import "./Productlist.css";
 
 export const ProductList = () => {
     const [products, setProducts] = useState([])
@@ -16,11 +16,11 @@ export const ProductList = () => {
     }, [])
 
     return(
-        <div className="product-list-container">
+        <section className="product-list-container">
             {products.map(product =>                 
                 <ProductCard key={product.id} product={product}/>
             )}
-        </div>        
+        </section>        
     );
 
 }

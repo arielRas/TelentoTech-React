@@ -1,8 +1,7 @@
-.home-central-img{
+.home-central-section-container{
     width: 100%;
-}
-
-.home-central-img img{
-    width: 100%;
-    position: relative;
+    min-height: 100vh;
+    background-image: url(../../../public/img/common/home-central-image.png);
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
 }

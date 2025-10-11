@@ -1,5 +1,5 @@
 .product-card-container {
-    height: 300px;
+    height: 370px;
     width: 80%;
     border: black 1px solid;
     display: flex;
@@ -9,6 +9,7 @@
     transition: transform 0.2s;
     cursor: pointer;
     background-color: white;
+    border-radius: 5px;
 }
 
 .product-card-container:hover {
@@ -27,7 +28,7 @@
 }
 
 .prod-card-img-container img {
-    width: 90%;
+    width: 80%;
     height: 90%;
 }
 
@@ -37,7 +38,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex: 1;
 }
 

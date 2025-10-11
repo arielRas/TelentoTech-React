@@ -6,5 +6,6 @@
     place-items: center;
     row-gap: 10px;
     position: absolute;
-    top: 95%;    
+    top: 75%;   
+    row-gap: 5%; 
 }
