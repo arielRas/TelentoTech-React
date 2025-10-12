@@ -1,19 +1,26 @@
-import { ProductCard } from "../../components/ItemCard/ProductCard";
 import { useEffect, useState } from "react";
+import { ProductCard } from "../../components/ItemCard/ProductCard";
 import { getAllProducts } from "../../Services/ProductService";
 import "./Productlist.css";
 
 export const ProductList = () => {
     const [products, setProducts] = useState([])
+    const [page, setPage] = useState(1);
 
     const handleFetch = async () => {
-        const data = await getAllProducts();
-        setProducts(data);
+        const data = await getAllProducts(page);
+
+        if(data.length > 0)
+            setProducts(data);
+        else{
+            if(page > 1)
+                setPage(page - 1);
+        }            
     }
 
     useEffect(() => {
         handleFetch();
-    }, [])
+    }, [page])
 
     return (
         <section className="product-list-section">
@@ -23,9 +30,9 @@ export const ProductList = () => {
                 )}
             </div>
             <div className="product-list-pagination-container">
-                <button>Anterior</button>
-                <span>1</span>
-                <button>Siguiente</button>
+                <button onClick={() => page > 1 && setPage(page - 1)}>Anterior</button>
+                <span>{page}</span>
+                <button onClick={() => setPage(page + 1)}>Siguiente</button>
             </div>
         </section>
     );
