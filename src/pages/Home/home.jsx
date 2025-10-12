@@ -1,4 +1,4 @@
-import { ProductList } from "../../containers/ProductList/Productlist";
+import { ProductList } from "../../containers/ProductList/ProductList";
 import { MainLayout } from "../../layouts/MainLayout/MainLayout";
 import "./home.css";
 

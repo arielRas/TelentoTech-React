@@ -70,5 +70,77 @@
         "category": "GPU",
         "price": 825.00,
         "imageUrl": "./public/img/gallery/337e053a-3728-49ab-bba9-7974710c5508.jpg"
+    },
+    {
+        "id": "3707c55f-83d7-4598-8952-16b5c5a17180",
+        "name": "Radeon RX 9070",
+        "brand": "Asus",
+        "description": "Placa de Video ASUS PRIME Radeon RX 9070 XT 16GB GDDR6 OC",
+        "category": "GPU",
+        "price": 797.00,
+        "imageUrl": "./public/img/gallery/3707c55f-83d7-4598-8952-16b5c5a17180.jpg"
+    },
+    {
+        "id": "009fd440-afab-46fd-8d08-abc2e05589bc",
+        "name": "RX 9060 XT",
+        "brand": "Asrock",
+        "description": "Placa de Video Asrock Radeon RX 9060 XT 16GB GDDR6 Challenger OC ",
+        "category": "GPU",
+        "price": 513.00,
+        "imageUrl": "./public/img/gallery/009fd440-afab-46fd-8d08-abc2e05589bc.jpg"
+    },
+    {
+        "id": "ed7a3d8b-ea21-4b2e-a5f7-ba32ce4aed84",
+        "name": "Radeon RX 7600",
+        "brand": "Asus",
+        "description": "Placa de Video ASUS Dual Radeon RX 7600 8GB GDDR6 EVO OC",
+        "category": "GPU",
+        "price": 298.00,
+        "imageUrl": "./public/img/gallery/ed7a3d8b-ea21-4b2e-a5f7-ba32ce4aed84.jpg"
+    },
+    {
+        "id": "90bed980-a66c-4e8e-8ea5-523f63d1a295",
+        "name": "PRIME B760M-K DDR5",
+        "brand": "Asus",
+        "description": "Mother ASUS PRIME B760M-K DDR5 12/13/14th Gen LGA1700",
+        "category": "Motherboard",
+        "price": 110.00,
+        "imageUrl": "./public/img/gallery/90bed980-a66c-4e8e-8ea5-523f63d1a295.jpg"
+    },
+    {
+        "id": "73c41c6a-f99b-4e00-9c80-492b1e9077cc",
+        "name": "B760M PG Lightning WIFI",
+        "brand": "Asrock",
+        "description": "Mother Asrock B760M PG Lightning WIFI S1700 DDR5",
+        "category": "Motherboard",
+        "price": 119.00,
+        "imageUrl": "./public/img/gallery/73c41c6a-f99b-4e00-9c80-492b1e9077cc.jpg"
+    },
+    {
+        "id": "bca94444-335d-4edc-bd85-7165c4a7321e",
+        "name": "B550M PRO-VDH",
+        "brand": "MSI",
+        "description": "Mother MSI B550M PRO-VDH AM4",
+        "category": "Motherboard",
+        "price": 90.00,
+        "imageUrl": "./public/img/gallery/bca94444-335d-4edc-bd85-7165c4a7321e.jpg"
+    },
+    {
+        "id": "84fa7fa3-89e7-4fb5-aa1b-577c15757db3",
+        "name": "TUF B550M-PLUS WiFi II",
+        "brand": "Asrock",
+        "description": "Mother ASUS TUF B550M-PLUS WiFi II AM4",
+        "category": "Motherboard",
+        "price": 162.00,
+        "imageUrl": "./public/img/gallery/84fa7fa3-89e7-4fb5-aa1b-577c15757db3.jpg"
+    },
+    {
+        "id": "460855c8-62d7-4e6c-bf72-d74b5d4a7a1a",
+        "name": "XPG Lancer CUDIMM RGB",
+        "brand": "Adata",
+        "description": "Memoria ADATA DDR5 48GB (2x24GB) 9200MHz XPG Lancer CUDIMM RGB CL42 Intel XMP 3.0",
+        "category": "Memoria RAM",
+        "price": 300.00,
+        "imageUrl": "./public/img/gallery/460855c8-62d7-4e6c-bf72-d74b5d4a7a1a.jpg"
     }
 ]

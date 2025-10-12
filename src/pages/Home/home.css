@@ -8,15 +8,16 @@
 }
 
 .home-h1-container,
-.home-central-img-container{
+.home-central-img-container {
     flex: 1;
 }
 
-.home-h1-container{
+.home-h1-container {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    
+    padding-left: 10%;
+
 }
 
 .home-h1-container h1 {
@@ -37,12 +38,12 @@
 }
 
 .home-central-section-container p {
-  font-size: 1.2rem;
-  color: #E0E0E0;
-  max-width: 550px;
-  line-height: 1.5;
+    font-size: 1.2rem;
+    color: #E0E0E0;
+    max-width: 550px;
+    line-height: 1.5;
 }
 
-.home-central-img-container img{
+.home-central-img-container img {
     width: 45%;
 }

@@ -6,7 +6,7 @@ import "./Productlist.css";
 export const ProductList = () => {
     const [products, setProducts] = useState([])
 
-    const handleFetch = async () =>{
+    const handleFetch = async () => {
         const data = await getAllProducts();
         setProducts(data);
     }
@@ -15,13 +15,19 @@ export const ProductList = () => {
         handleFetch();
     }, [])
 
-    return(
-        <section className="product-list-container">
-            {products.map(product =>                 
-                <ProductCard key={product.id} product={product}/>
-            )}
-        </section>        
+    return (
+        <section className="product-list-section">
+            <div className="product-list-container">
+                {products.map(product =>
+                    <ProductCard key={product.id} product={product} />
+                )}
+            </div>
+            <div className="product-list-pagination-container">
+                <button>Anterior</button>
+                <span>1</span>
+                <button>Siguiente</button>
+            </div>
+        </section>
     );
-
 }
 export default ProductList
