@@ -35,7 +35,7 @@ nav ul {
     list-style: none;
 }
 
-nav ul a{
+nav ul a {
     text-decoration: none;
     color: inherit;
 }
@@ -47,9 +47,36 @@ nav ul a{
 }
 
 .header-login-button-container,
-.header-cart-container {
+.header-cart-button-container {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+.header-login-button-container{
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.header-cart-button-container{
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+header button {
+    width: 70%;
+    background-color: transparent;
+    border: 2px solid #00ADB5;
+    color: #00ADB5;
+    border-radius: 6px;
+    padding: 0.4rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header button:hover {
+    background-color: #00ADB5;
+    color: #0B1E3A;
+    box-shadow: 0 0 10px rgba(0, 173, 181, 0.4);
 }

@@ -10,10 +10,9 @@ export const Header = () => {
 
             <nav>
                 <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>Contacto</li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/">Nosotros</Link></li>
+                    <li><Link to="/">Contacto</Link></li>
                 </ul>
             </nav>
 
@@ -21,7 +20,7 @@ export const Header = () => {
                 <div className="header-login-button-container">
                     <button>Login</button>
                 </div>
-                <div className="header-cart-container">
+                <div className="header-cart-button-container">
                     <button>Carrito</button>
                 </div>
             </div>
