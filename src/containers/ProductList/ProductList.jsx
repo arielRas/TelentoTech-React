@@ -23,7 +23,7 @@ export const ProductList = () => {
     }, [page])
 
     return (
-        <section className="product-list-section">
+        <section id="products" className="product-list-section">
             <div className="product-list-container">
                 {products.map(product =>
                     <ProductCard key={product.id} product={product} />

@@ -35,6 +35,11 @@ nav ul {
     list-style: none;
 }
 
+nav ul a{
+    text-decoration: none;
+    color: inherit;
+}
+
 
 .header-aux-container {
     flex: 1;
