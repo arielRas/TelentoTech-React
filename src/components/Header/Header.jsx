@@ -5,7 +5,7 @@ export const Header = () => {
     return (
         <header>
             <div className="header-logo-container">
-                <img src="../public/img/common/logo.png" alt="" />
+                <Link to="/"><img src="/img/common/logo.png" alt="" /></Link>
             </div>
 
             <nav>

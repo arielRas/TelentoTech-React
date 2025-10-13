@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { ProductCard } from "../../components/ItemCard/ProductCard";
 import { getAllProducts } from "../../Services/ProductService";
 import "./Productlist.css";
+import { Link } from "react-router-dom";
 
 export const ProductList = () => {
     const [products, setProducts] = useState([])
@@ -23,10 +24,12 @@ export const ProductList = () => {
     }, [page])
 
     return (
-        <section id="products" className="product-list-section">
+        <section className="product-list-section">
             <div className="product-list-container">
                 {products.map(product =>
-                    <ProductCard key={product.id} product={product} />
+                    <Link key={product.id} to={`/products/${product.id}`}>
+                        <ProductCard product={product} />
+                    </Link>
                 )}
             </div>
             <div className="product-list-pagination-container">

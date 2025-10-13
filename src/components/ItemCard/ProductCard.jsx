@@ -9,7 +9,7 @@ export const ProductCard = ({product}) => {
 
             <div className="prod-card-description-container">
                 <h2>{product.description}</h2>
-                <span>u$s {product.price}</span>
+                <span>u$s {product.price.toFixed(2)}</span>
             </div>
         </div>
     )
