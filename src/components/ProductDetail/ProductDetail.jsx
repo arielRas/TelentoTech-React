@@ -1,6 +1,9 @@
+import { useCartContext } from "../../Contexts/CartContext/useCartContext";
 import "./ProductDetail.css";
 
 export const ProductDetail = ({ product }) => {
+    const { addToCart } = useCartContext();
+
     return (
         <section className="product-detail-section">
             <div className="product-detail-img-container">
@@ -26,7 +29,7 @@ export const ProductDetail = ({ product }) => {
                     <input type="text" name="price" id="price" value={product.price.toFixed(2)} disabled/>
                 </div>
                 <div className="btn-container">
-                    <button>
+                    <button onClick={() => addToCart(product)}>
                         Agregr al carrito
                     </button>
                 </div>
