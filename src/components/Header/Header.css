@@ -46,6 +46,11 @@ nav ul a {
     display: flex;
 }
 
+.header-aux-container a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .header-login-button-container,
 .header-cart-button-container {
     flex: 1;
@@ -55,7 +60,7 @@ nav ul a {
 
 .header-login-button-container{
     justify-content: flex-end;
-    padding-right: 10px;
+    padding-right: 30px;
 }
 
 .header-cart-button-container{
@@ -63,7 +68,7 @@ nav ul a {
     padding-left: 10px;
 }
 
-header button {
+header .link-button {
     width: 70%;
     background-color: transparent;
     border: 2px solid #00ADB5;
@@ -73,9 +78,10 @@ header button {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
-header button:hover {
+header .link-button:hover {
     background-color: #00ADB5;
     color: #0B1E3A;
     box-shadow: 0 0 10px rgba(0, 173, 181, 0.4);

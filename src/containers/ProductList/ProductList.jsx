@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ProductCard } from "../../components/ItemCard/ProductCard";
+import { ProductCard } from "../../components/ProductCard/ProductCard";
 import { getAllProducts } from "../../Services/ProductService";
 import "./Productlist.css";
 import { Link } from "react-router-dom";

@@ -18,10 +18,14 @@ export const Header = () => {
 
             <div className="header-aux-container">
                 <div className="header-login-button-container">
-                    <button>Login</button>
+                    <Link to="/">
+                        <div className="link-button ">Login</div>
+                    </Link>
                 </div>
                 <div className="header-cart-button-container">
-                    <button>Carrito</button>
+                    <Link to="/cart">
+                        <div className="link-button ">Carrito</div>
+                    </Link>
                 </div>
             </div>
         </header>
