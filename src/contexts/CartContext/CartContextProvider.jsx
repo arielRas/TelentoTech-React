@@ -43,6 +43,10 @@ export const CartContextProvider = ({ children }) => {
         setCart((prevCart) => prevCart.filter(item => item.id !== id));
     };
 
+    const emptyCart = () => {
+        setCart([]);
+    };
+
     const countItemsCart = () => {
         return cart.length;
     };
@@ -84,6 +88,7 @@ export const CartContextProvider = ({ children }) => {
         deleteItem,
         countItemsCart,
         getTotalAmount,
+        emptyCart,
         itemQuantityIncrease,
         itemQuantityDecrease
     };
