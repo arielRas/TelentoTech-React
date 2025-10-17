@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { ProductCard } from "../../components/ProductCard/ProductCard";
 import { getAllProducts } from "../../Services/ProductService";
 import "./Productlist.css";
-import { Link } from "react-router-dom";
+
 
 export const ProductList = () => {
     const [products, setProducts] = useState([])
@@ -11,12 +12,12 @@ export const ProductList = () => {
     const handleFetch = async () => {
         const data = await getAllProducts(page);
 
-        if(data.length > 0)
+        if (data.length > 0) {
             setProducts(data);
-        else{
-            if(page > 1)
-                setPage(page - 1);
-        }            
+        }
+        else if (page > 1) {
+            setPage(page - 1);
+        }
     }
 
     useEffect(() => {

@@ -1,5 +1,5 @@
 const BASE_URL = "/data/products.json"
-const LIMIT_PAGE = 12;
+const LIMIT_PAGE = 9;
 
 export const getAllProducts = async (pageNumber) => {
 
