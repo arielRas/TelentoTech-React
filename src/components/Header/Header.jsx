@@ -1,7 +1,10 @@
+import {useCartContext} from "../../contexts/CartContext/useCartContext";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
 export const Header = () => {
+    const {countItemsCart} = useCartContext();
+
     return (
         <header>
             <div className="header-logo-container">
@@ -24,7 +27,12 @@ export const Header = () => {
                 </div>
                 <div className="header-cart-button-container">
                     <Link to="/cart">
-                        <div className="link-button ">Carrito</div>
+                        <div className="link-button ">
+                            <span>Carrito</span>
+                            { countItemsCart() > 0 &&
+                                <span className="cart-item-counter">{countItemsCart()}</span>
+                            }
+                        </div>
                     </Link>
                 </div>
             </div>

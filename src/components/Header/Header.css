@@ -60,7 +60,6 @@ nav ul a {
 
 .header-login-button-container{
     justify-content: flex-end;
-    padding-right: 30px;
 }
 
 .header-cart-button-container{
@@ -69,7 +68,7 @@ nav ul a {
 }
 
 header .link-button {
-    width: 70%;
+    width: 100px;
     background-color: transparent;
     border: 2px solid #00ADB5;
     color: #00ADB5;
@@ -85,4 +84,19 @@ header .link-button:hover {
     background-color: #00ADB5;
     color: #0B1E3A;
     box-shadow: 0 0 10px rgba(0, 173, 181, 0.4);
+}
+
+header .link-button:hover .cart-item-counter{
+    border: #0B1E3A 2px solid;
+}
+
+header .cart-item-counter{
+    border-radius: 30px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+    border: #00ADB5 2px solid;
+    color: inherit
 }
