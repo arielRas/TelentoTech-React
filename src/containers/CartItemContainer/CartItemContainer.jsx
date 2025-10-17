@@ -1,9 +1,10 @@
+import { useEffect } from "react";
 import { useCartContext } from "../../contexts/CartContext/useCartContext";
 import { CartItem } from "../../components/CartItem/CartItem";
 import './CartItemContainer.css';
 
 export const CartItemContainer = () => {
-    const { cart, getTotalAmount } = useCartContext();
+    const { cart, getTotalAmount } = useCartContext();    
 
     return (
         <section className="cart-item-section">

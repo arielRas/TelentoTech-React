@@ -1,6 +1,9 @@
+import { useCartContext } from "../../contexts/CartContext/useCartContext";
 import "./CartItem.css";
 
 export const CartItem = ({ item }) => {
+    const {itemQuantityIncrease, itemQuantityDecrease, deleteItem} = useCartContext();
+
     return (
         <div className="cartItem">
             <div className="item-img-container">
@@ -8,17 +11,17 @@ export const CartItem = ({ item }) => {
             </div>
             <div className="item-info-container">
                 <span>{item.description}</span>
-                <button>Eliminar</button>
+                <button onClick={() => deleteItem(item.id)}>Eliminar</button>
             </div>
             <div className="item-quantity-container">
                 <div className="border-buttons">
-                    <button>-</button>
+                    <button onClick={() => itemQuantityDecrease(item.id)}>-</button>
                     <span>{item.quantity}</span>
-                    <button>+</button>
+                    <button onClick={() => itemQuantityIncrease(item.id)}>+</button>
                 </div>
             </div>
             <div className="item-subtotal-container">
-                <span>usd {item.subtotal.toFixed(2)}</span>
+                <span>u$s {item.subtotal.toFixed(2)}</span>
             </div>
 
         </div>

@@ -14,7 +14,7 @@
 }
 
 .product-card-container:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
     box-shadow: 0 8px 20px rgba(0, 173, 181, 0.25);
     border-color: #00ADB5;
 }
