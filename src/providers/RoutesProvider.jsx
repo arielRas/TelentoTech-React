@@ -2,18 +2,18 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from '../pages/Home/home';
 import { Detail } from '../pages/Detail/Detail';
 import { Cart } from '../pages/Cart/Cart';
+import { ScrollToTop } from '../components/ScrollToTop/ScrollToTop';
 
-export const RoutesProvider = ({ children }) => {
+export const RoutesProvider = () => {
     return (
         <>
             <Router>
-                <div>
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/products/:id" element={<Detail />} />
-                        <Route path="/cart" element={<Cart />} />
-                    </Routes>
-                </div>
+                <ScrollToTop />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/products/:id" element={<Detail />} />
+                    <Route path="/cart" element={<Cart />} />
+                </Routes>
             </Router>
         </>
     );
