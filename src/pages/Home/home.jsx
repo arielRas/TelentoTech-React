@@ -14,7 +14,7 @@ export const Home = () => {
                     <p>Encontrá los mejores productos informáticos con la mejor atención y garantía.</p>
                 </div>
                 <div className="home-central-img-container">
-                    <img src="./public/img/common/home-central-image-2.png" alt="" />
+                    <img src="./img/common/home-central-image-2.png" alt="" />
                 </div>
             </section>
             <ProductList />
