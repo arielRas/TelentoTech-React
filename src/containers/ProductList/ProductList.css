@@ -65,42 +65,44 @@
 /*                               Medias Queries                               */
 /* -------------------------------------------------------------------------- */
 
-
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media (min-width: 1024px) and (max-width: 1200px) {
     .product-list-container {
         grid-template-columns: repeat(3, 1fr);
-        margin-bottom: 20%;
+        row-gap: 0.1%;
+        margin-bottom: 10%;
     }
 
-    .product-list-section {
-        margin-top: -35%;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-    .product-list-container {
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 0.5%;
-        margin-bottom: 20%;
-    }
-
-    .product-list-section {
-        position: static;
-        margin-top: -10%;
+    .product-list-container a {
+        max-width: 90%;
     }
 }
 
-@media (max-width: 767px) {
-    .product-list-section {
-        position: static;
-        margin-top: -50%;
-        width: 80%;
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .product-list-container {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 0.1%;
+        margin-bottom: 10%;
     }
 
+    .product-list-container a {
+        max-width: 90%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
     .product-list-container {
-        width: 100%;
         grid-template-columns: repeat(1, 1fr);
         row-gap: 0.1%;
-        margin-bottom: 25%;
+        margin-bottom: 30%;
+    }
+
+    .product-list-container a {
+        max-width: 90%;
     }
 }
+
+/* border: 1px solid red; */
