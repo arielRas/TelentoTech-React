@@ -67,6 +67,7 @@
     .home-central-section-container {
         flex-direction: column;
         align-items: center;
+        min-height: 200vh;
     }
 
     .home-h1-container,
@@ -78,5 +79,26 @@
     .home-central-img-container {
         display: flex;
         justify-content: center;
+    }  
+
+    .home-h1-container h1 {
+        text-align: center;
+    }
+
+    .home-h1-container p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .home-h1-container h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .home-h1-container p {
+        font-size: 1rem;
+        text-align: center;
     }
 }
