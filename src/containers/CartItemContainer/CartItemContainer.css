@@ -119,7 +119,7 @@
   }
 }
 
-@media (min-width: 600px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .cart-item-section {
     width: 80%;
   }

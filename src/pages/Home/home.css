@@ -63,7 +63,7 @@
     }
 }
 
-@media (min-width: 600px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
     .home-central-section-container {
         flex-direction: column;
         align-items: center;

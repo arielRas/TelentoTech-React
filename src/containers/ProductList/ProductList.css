@@ -90,7 +90,7 @@
     }
 }
 
-@media (min-width: 600px) and (max-width: 767px) {
+@media (max-width: 767px) {
     .product-list-section {
         position: static;
         margin-top: -10%;

@@ -63,7 +63,7 @@ src/
 
 ## 🌐 Hosting
 
-Próximamente se agregará el enlace al hosting del proyecto.
+[Enlace del proyecto en Netlify.](https://telentotech-react.netlify.app/)
 
 ---
 
