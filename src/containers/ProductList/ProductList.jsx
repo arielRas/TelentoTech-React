@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ProductCard } from "../../components/ProductCard/ProductCard";
 import { getAllProducts } from "../../Services/ProductService";
-import "./Productlist.css";
+import "./ProductList.css";
 
 
 export const ProductList = () => {
