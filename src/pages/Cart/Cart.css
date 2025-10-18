@@ -15,4 +15,5 @@
     background: linear-gradient(90deg, #00ADB5, #08D9D6);
     margin: 0.5rem auto 0;
     border-radius: 4px;
+    z-index: 0;
 }
