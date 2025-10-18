@@ -1,5 +1,5 @@
 .product-list-section {
-    width: 60%;
+    width: 70%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -10,10 +10,11 @@
 .product-list-container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     row-gap: 3%;
-    place-items: center;    
+    place-items: center;
     z-index: 2;
+    margin-bottom: 15%;
 }
 
 .product-list-container a {
@@ -21,11 +22,11 @@
     text-decoration: none;
     display: flex;
     justify-content: center;
+    max-width: 80%;
 }
 
 
 .product-list-pagination-container {
-    padding-top: 10%;
     padding-bottom: 5%;
     display: flex;
     justify-content: center;
@@ -55,4 +56,56 @@
     background-color: #ffffff;
     color: #00ADB5;
     box-shadow: 0 0 10px rgba(0, 173, 181, 0.4);
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                               Medias Queries                               */
+/* -------------------------------------------------------------------------- */
+
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .product-list-container {
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 20%;
+    }
+
+    .product-list-section {
+        margin-top: -35%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .product-list-container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0.5%;
+        margin-bottom: 20%;
+    }
+
+    .product-list-section {
+        position: static;
+        margin-top: -10%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .product-list-section {
+        position: static;
+        margin-top: -10%;
+    }
+
+    .product-list-container {
+        width: 70%;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 0.5%;
+        margin-bottom: 50%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 720px) {
+    .product-list-container {
+        margin-bottom: 65%;
+    }
 }

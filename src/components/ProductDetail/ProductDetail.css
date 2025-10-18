@@ -22,7 +22,7 @@
 .product-detail-img-container img {
     width: 90%;
     height: 90%;
-    border-radius: 10px;    
+    border-radius: 10px;
     padding: 10px;
     box-shadow: 0 4px 12px rgba(11, 30, 58, 0.15);
 }
@@ -84,4 +84,18 @@
 .product-detail-info-container button:hover {
     background-color: #08D9D6;
     box-shadow: 0 0 10px rgba(0, 173, 181, 0.4);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                               Medias Queries                               */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 992px) {
+    .product-detail-section {
+        width: 65%;
+        flex-direction: column;
+        padding-bottom: 3%;
+        margin-bottom: 5%;
+    }
 }

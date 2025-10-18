@@ -16,8 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-left: 10%;
-
+    padding-left: 15%;
 }
 
 .home-h1-container h1 {
@@ -45,5 +44,39 @@
 }
 
 .home-central-img-container img {
-    width: 45%;
+    width: 50%;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                               Medias Queries                               */
+/* -------------------------------------------------------------------------- */
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .home-h1-container {
+        padding-left: 15%;
+    }
+
+    .home-central-img-container img {
+        padding-top: 5%;
+        width: 70%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+    .home-central-section-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-h1-container,
+    .home-central-img-container {
+        padding: 0;
+        flex: 0;
+    }
+
+    .home-central-img-container {
+        display: flex;
+        justify-content: center;
+    }
 }
