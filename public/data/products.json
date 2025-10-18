@@ -1,0 +1,146 @@
+[
+    {
+        "id": "d89c17a0-5233-4c3c-82c0-6d844048f90b",
+        "name": "Ryzen 5 4500",
+        "brand": "AMD",
+        "description": "Procesador AMD Ryzen 5 4500 + Wraith Stealth Cooler AM4",
+        "category": "CPU",
+        "price": 72.30,
+        "imageUrl": "/img/gallery/d89c17a0-5233-4c3c-82c0-6d844048f90b.jpg"
+    },
+    {
+        "id": "ab8cd85e-d1b5-49a1-9fab-9180af32251c",
+        "name": "Athlon 3000G",
+        "brand": "AMD",
+        "description": "Procesador AMD Athlon 3000G 3.5GHz + Radeon Vega 3 AM4",
+        "category": "CPU",
+        "price": 39.00,
+        "imageUrl": "/img/gallery/ab8cd85e-d1b5-49a1-9fab-9180af32251c.jpg"
+    },
+    {
+        "id": "a997f782-8345-4ce0-a818-91f67cd2a6ab",
+        "name": "Ryzen 5 8500G",
+        "brand": "AMD",
+        "description": "Procesador AMD Ryzen 5 4500 + Wraith Stealth Cooler AM4",
+        "category": "CPU",
+        "price": 72.30,
+        "imageUrl": "/img/gallery/a997f782-8345-4ce0-a818-91f67cd2a6ab.jpg"
+    },
+    {
+        "id": "aab9933b-16bd-4f69-b7c6-b24c7a3ee312",
+        "name": "Core i3 12100F",
+        "brand": "Intel",
+        "description": "Procesador Intel Core i3 12100F 4.3GHz Turbo Socket 1700 Alder Lake",
+        "category": "CPU",
+        "price": 99.00,
+        "imageUrl": "/img/gallery/aab9933b-16bd-4f69-b7c6-b24c7a3ee312.jpg"
+    },
+    {
+        "id": "8c797fe5-9c4e-4eea-abb6-f8f509dfc12e",
+        "name": "Core i5 14400",
+        "brand": "Intel",
+        "description": "Procesador Intel Core i5 14400 4.7GHz Turbo Socket 1700 Raptor Lake",
+        "category": "CPU",
+        "price": 203.00,
+        "imageUrl": "/img/gallery/8c797fe5-9c4e-4eea-abb6-f8f509dfc12e.jpg"
+    },
+    {
+        "id": "b708e646-4dba-4901-85b3-f6adc11ccfad",
+        "name": "GeForce RTX 3050",
+        "brand": "Asus",
+        "description": "Placa de Video ASUS Dual GeForce RTX 3050 8GB GDDR6 V2 OC",
+        "category": "GPU",
+        "price": 272.00,
+        "imageUrl": "/img/gallery/b708e646-4dba-4901-85b3-f6adc11ccfad.jpg"
+    },
+    {
+        "id": "35b3a61d-6a20-4c31-86d9-cde7cb1e0a92",
+        "name": "GeForce RTX 3060",
+        "brand": "Zotac",
+        "description": "Placa de Video Zotac GeForce RTX 3060 12GB GDDR6 Twin Edge",
+        "category": "GPU",
+        "price": 332.00,
+        "imageUrl": "/img/gallery/35b3a61d-6a20-4c31-86d9-cde7cb1e0a92.jpg"
+    },
+    {
+        "id": "337e053a-3728-49ab-bba9-7974710c5508",
+        "name": "GeForce RTX 5070",
+        "brand": "Asus",
+        "description": "Placa de Video ASUS TUF GeForce RTX 5070 12GB GDDR7 Gaming OC",
+        "category": "GPU",
+        "price": 825.00,
+        "imageUrl": "/img/gallery/337e053a-3728-49ab-bba9-7974710c5508.jpg"
+    },
+    {
+        "id": "3707c55f-83d7-4598-8952-16b5c5a17180",
+        "name": "Radeon RX 9070",
+        "brand": "Asus",
+        "description": "Placa de Video ASUS PRIME Radeon RX 9070 XT 16GB GDDR6 OC",
+        "category": "GPU",
+        "price": 797.00,
+        "imageUrl": "/img/gallery/3707c55f-83d7-4598-8952-16b5c5a17180.jpg"
+    },
+    {
+        "id": "009fd440-afab-46fd-8d08-abc2e05589bc",
+        "name": "RX 9060 XT",
+        "brand": "Asrock",
+        "description": "Placa de Video Asrock Radeon RX 9060 XT 16GB GDDR6 Challenger OC ",
+        "category": "GPU",
+        "price": 513.00,
+        "imageUrl": "/img/gallery/009fd440-afab-46fd-8d08-abc2e05589bc.jpg"
+    },
+    {
+        "id": "ed7a3d8b-ea21-4b2e-a5f7-ba32ce4aed84",
+        "name": "Radeon RX 7600",
+        "brand": "Asus",
+        "description": "Placa de Video ASUS Dual Radeon RX 7600 8GB GDDR6 EVO OC",
+        "category": "GPU",
+        "price": 298.00,
+        "imageUrl": "/img/gallery/ed7a3d8b-ea21-4b2e-a5f7-ba32ce4aed84.jpg"
+    },
+    {
+        "id": "90bed980-a66c-4e8e-8ea5-523f63d1a295",
+        "name": "PRIME B760M-K DDR5",
+        "brand": "Asus",
+        "description": "Mother ASUS PRIME B760M-K DDR5 12/13/14th Gen LGA1700",
+        "category": "Motherboard",
+        "price": 110.00,
+        "imageUrl": "/img/gallery/90bed980-a66c-4e8e-8ea5-523f63d1a295.jpg"
+    },
+    {
+        "id": "73c41c6a-f99b-4e00-9c80-492b1e9077cc",
+        "name": "B760M PG Lightning WIFI",
+        "brand": "Asrock",
+        "description": "Mother Asrock B760M PG Lightning WIFI S1700 DDR5",
+        "category": "Motherboard",
+        "price": 119.00,
+        "imageUrl": "/img/gallery/73c41c6a-f99b-4e00-9c80-492b1e9077cc.jpg"
+    },
+    {
+        "id": "bca94444-335d-4edc-bd85-7165c4a7321e",
+        "name": "B550M PRO-VDH",
+        "brand": "MSI",
+        "description": "Mother MSI B550M PRO-VDH AM4",
+        "category": "Motherboard",
+        "price": 90.00,
+        "imageUrl": "/img/gallery/bca94444-335d-4edc-bd85-7165c4a7321e.jpg"
+    },
+    {
+        "id": "84fa7fa3-89e7-4fb5-aa1b-577c15757db3",
+        "name": "TUF B550M-PLUS WiFi II",
+        "brand": "Asrock",
+        "description": "Mother ASUS TUF B550M-PLUS WiFi II AM4",
+        "category": "Motherboard",
+        "price": 162.00,
+        "imageUrl": "/img/gallery/84fa7fa3-89e7-4fb5-aa1b-577c15757db3.jpg"
+    },
+    {
+        "id": "460855c8-62d7-4e6c-bf72-d74b5d4a7a1a",
+        "name": "XPG Lancer CUDIMM RGB",
+        "brand": "Adata",
+        "description": "Memoria ADATA DDR5 48GB (2x24GB) 9200MHz XPG Lancer CUDIMM RGB CL42 Intel XMP 3.0",
+        "category": "Memoria RAM",
+        "price": 300.00,
+        "imageUrl": "/img/gallery/460855c8-62d7-4e6c-bf72-d74b5d4a7a1a.jpg"
+    }
+]
