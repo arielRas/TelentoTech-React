@@ -2,7 +2,7 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import "./MainLayout.css";
 
-export const MainLayout = ({ children }) => {
+const MainLayout = ({ children }) => {
     return (
         <>
             <Header/>

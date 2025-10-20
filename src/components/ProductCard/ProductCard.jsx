@@ -1,6 +1,6 @@
 import './ProductCard.css'
 
-export const ProductCard = ({product}) => {
+const ProductCard = ({product}) => {
     return (
         <div className="product-card-container">
             <div className="prod-card-img-container">
@@ -14,4 +14,4 @@ export const ProductCard = ({product}) => {
         </div>
     )
 }
-export default ProductCard
+export default ProductCard;

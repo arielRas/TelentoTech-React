@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { ProductCard } from "../../components/ProductCard/ProductCard";
 import { getAllProducts } from "../../Services/ProductService";
+import ProductCard from "../../components/ProductCard/ProductCard";
 import "./ProductList.css";
 
 
-export const ProductList = () => {
+const ProductList = () => {
     const [products, setProducts] = useState([])
     const [page, setPage] = useState(1);
 

@@ -1,6 +1,6 @@
 import "./Footer.css";
 
-export const Footer = () => {
+const Footer = () => {
     return (
         <footer>
             <p>Derechos Reservados © 2025 - E-Shop.</p>
