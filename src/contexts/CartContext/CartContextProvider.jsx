@@ -1,25 +1,24 @@
 import { useEffect, useState } from 'react';
 import { CartContext } from './CartContext';
 
-export const CartContextProvider = ({ children }) => {
+const CartContextProvider = ({ children }) => {
 
+    /* ------------------- Obtiene carrito desde localStorage ------------------- */
     const getCartFromLocalStorage = () => {
         const data = localStorage.getItem('cart');
         console.log('Obteniendo carrito del localStorage');
         return data ? JSON.parse(data) : [];
-    }
+    };
 
-    const [cart, setCart] = useState(getCartFromLocalStorage);
 
+    /* -------------------- Guarda el carrito en localStorage ------------------- */
     const saveCartToLocalStorage = (cart) => {
         localStorage.setItem('cart', JSON.stringify(cart));
         console.log('Carrito guardado en localStorage', cart);
-    }
-
-    const getTotalAmount = () => {
-        return cart.reduce((subtotal, item) => subtotal += item.subtotal, 0);
     };
 
+
+    /* ------------------------ Agrega un item al carrito ----------------------- */
     const addToCart = (product) => {
         if (!cart.some(prod => prod.id === product.id)) {
             const newProduct = { ...product, quantity: 1, subtotal: product.price };
@@ -39,19 +38,26 @@ export const CartContextProvider = ({ children }) => {
         }
     };
 
-    const deleteItem = (id) => {
+
+    /* ------------------- Borra un item del carrito por su id ------------------ */
+    const deleteItemById = (id) => {
         setCart((prevCart) => prevCart.filter(item => item.id !== id));
     };
 
+
+    /* ----------------------- Vacia el carrito de compras ---------------------- */
     const emptyCart = () => {
         setCart([]);
     };
 
+
+    /* ---------------- Cuenta la cantidad de items en el carrito --------------- */
     const countItemsCart = () => {
         return cart.length;
     };
 
-    const itemQuantityIncrease = (id) => {
+    /* -------- Incrementa la cantidad de un item en el carrito por su id ------- */
+    const itemQuantityIncreaseById = (id) => {
         const updatedCart = cart.map(prod =>
             prod.id === id
                 ? {
@@ -65,7 +71,13 @@ export const CartContextProvider = ({ children }) => {
         setCart(updatedCart);
     }
 
-    const itemQuantityDecrease = (id) => {
+    /* -------- Decrementa la cantidad de un item en el carrito por su id ------- */
+    const itemQuantityDecreaseById = (id) => {
+        const existingItem = cart.find(item => item.id === id);
+
+        if (!existingItem || existingItem.quantity <= 1)
+            return;
+
         const updatedCart = cart.map(prod =>
             prod.id === id && prod.quantity > 1
                 ? {
@@ -79,18 +91,28 @@ export const CartContextProvider = ({ children }) => {
         setCart(updatedCart);
     }
 
+
+    /* -------------------- Calcula el monto total del carrito ------------------- */
+    const getTotalAmount = () => {
+        return cart.reduce((subtotal, item) => subtotal += item.subtotal, 0);
+    };
+
+
+    const [cart, setCart] = useState(getCartFromLocalStorage);
+
     useEffect(() =>
-        saveCartToLocalStorage(cart), [cart]);
+        saveCartToLocalStorage(cart),
+        [cart]);
 
     const values = {
         cart,
         addToCart,
-        deleteItem,
+        deleteItemById,
         countItemsCart,
         getTotalAmount,
         emptyCart,
-        itemQuantityIncrease,
-        itemQuantityDecrease
+        itemQuantityIncreaseById,
+        itemQuantityDecreaseById
     };
 
     return <CartContext.Provider value={values}>{children}</CartContext.Provider>;

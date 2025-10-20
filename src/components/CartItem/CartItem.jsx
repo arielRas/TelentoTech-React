@@ -1,8 +1,8 @@
-import { useCartContext } from "../../contexts/CartContext/useCartContext";
+import useCartContext from "../../contexts/CartContext/useCartContext";
 import "./CartItem.css";
 
-export const CartItem = ({ item }) => {
-    const {itemQuantityIncrease, itemQuantityDecrease, deleteItem} = useCartContext();
+const CartItem = ({ item }) => {
+    const {itemQuantityIncreaseById, itemQuantityDecreaseById, deleteItemById} = useCartContext();
 
     return (
         <div className="cartItem">
@@ -11,13 +11,13 @@ export const CartItem = ({ item }) => {
             </div>
             <div className="item-info-container">
                 <span>{item.description}</span>
-                <button onClick={() => deleteItem(item.id)}>Eliminar</button>
+                <button onClick={() => deleteItemById(item.id)}>Eliminar</button>
             </div>
             <div className="item-quantity-container">
                 <div className="border-buttons">
-                    <button onClick={() => itemQuantityDecrease(item.id)}>-</button>
+                    <button onClick={() => itemQuantityDecreaseById(item.id)}>-</button>
                     <span>{item.quantity}</span>
-                    <button onClick={() => itemQuantityIncrease(item.id)}>+</button>
+                    <button onClick={() => itemQuantityIncreaseById(item.id)}>+</button>
                 </div>
             </div>
             <div className="item-subtotal-container">

@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Home } from '../pages/Home/home';
-import { Detail } from '../pages/Detail/Detail';
-import { Cart } from '../pages/Cart/Cart';
-import { ScrollToTop } from '../components/ScrollToTop/ScrollToTop';
+import Home from '../pages/Home/home';
+import Detail from '../pages/Detail/Detail';
+import Cart from '../pages/Cart/Cart';
+import ScrollToTop from '../components/ScrollToTop/ScrollToTop';
 
-export const RoutesProvider = () => {
+const RoutesProvider = () => {
     return (
         <>
             <Router>

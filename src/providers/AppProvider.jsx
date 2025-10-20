@@ -1,7 +1,7 @@
-import { ContextsProvider } from "./ContextsProvider";
-import { RoutesProvider } from "./RoutesProvider";
+import ContextsProvider from "./ContextsProvider";
+import RoutesProvider from "./RoutesProvider";
 
-export const AppProvider = () => {
+const AppProvider = () => {
     return(
         <ContextsProvider>
             <RoutesProvider />

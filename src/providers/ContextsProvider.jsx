@@ -1,6 +1,6 @@
 import CartContextProvider from "../contexts/CartContext/CartContextProvider";
 
-export const ContextsProvider = ({ children }) => {
+const ContextsProvider = ({ children }) => {
     return(
         <CartContextProvider>
             {children}

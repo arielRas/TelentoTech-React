@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { getProductById } from "../../Services/ProductService";
-import { ProductDetail } from "../../components/ProductDetail/ProductDetail";
 import { useParams } from "react-router-dom";
+import { getProductById } from "../../Services/ProductService";
+import ProductDetail from "../../components/ProductDetail/ProductDetail";
 import "./ProductDetailContainer.css";
 
-export const ProductDetailContainer = () => {
+const ProductDetailContainer = () => {
     const [product, setProduct] = useState(null);
     const { id } = useParams();
 

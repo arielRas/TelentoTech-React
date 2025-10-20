@@ -1,8 +1,8 @@
-import { CartItemContainer } from '../../containers/CartItemContainer/CartItemContainer';
-import { MainLayout } from '../../layouts/MainLayout/MainLayout';
+import CartItemContainer from '../../containers/CartItemContainer/CartItemContainer';
+import MainLayout from '../../layouts/MainLayout/MainLayout';
 import './Cart.css';
 
-export const Cart = () => {
+const Cart = () => {
     return (
         <MainLayout>
             <h1 className='cart-page-h1'>Carrito de compras</h1>

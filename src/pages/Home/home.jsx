@@ -1,8 +1,8 @@
-import { ProductList } from "../../containers/ProductList/ProductList";
-import { MainLayout } from "../../layouts/MainLayout/MainLayout";
+import ProductList from "../../containers/ProductList/ProductList";
+import MainLayout from "../../layouts/MainLayout/MainLayout";
 import "./home.css";
 
-export const Home = () => {
+const Home = () => {
     return (
         <MainLayout>
             <section className="home-central-section-container">
